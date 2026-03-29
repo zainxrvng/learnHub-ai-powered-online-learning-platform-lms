@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/themeProvider/theme-provider";
 
 const geistHeading = Geist({ subsets: ["latin"], variable: "--font-heading" });
 
-const roboto = Roboto({ subsets: ["latin"], variable: "--font-sans" });
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -137,7 +137,7 @@ export default function RootLayout({
         geistSans.variable,
         geistMono.variable,
         "font-sans",
-        roboto.variable,
+        geist.variable,
         geistHeading.variable,
       )}
     >
